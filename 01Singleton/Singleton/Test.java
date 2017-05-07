@@ -42,7 +42,7 @@ public class Test  {
             klonObiekt1 = (Singleton)klonowanie.duplikuj(obiekt1);
         }
         end = System.nanoTime();
-        System.out.println("Kopiowanie 1 000 instancji " + klonObiekt1.getClass().getSimpleName() +
+        System.out.println("Klonowanie 1 000 instancji pierwszego obiektu " + klonObiekt1.getClass().getSimpleName() +
                 " zajęlo: " + (end - start) / 1000 + " micro sekund");
         
         SingletonDoubleCheckLocking klonObiekt2 = null;
@@ -51,7 +51,7 @@ public class Test  {
             klonObiekt2 = (SingletonDoubleCheckLocking)klonowanie.duplikuj(obiekt2);
         }
         end = System.nanoTime();
-        System.out.println("Kopiowanie 1 000 instancji " + klonObiekt2.getClass().getSimpleName() +
+        System.out.println("Klonowanie 1 000 instancji drugiego obiektu " + klonObiekt2.getClass().getSimpleName() +
                  "  zajęlo: " + (end - start) / 1000 + " micro sekund");
         
         System.out.println("\n"+

@@ -15,6 +15,8 @@ public class Start {
         Komputer asus = sklep.wydaj(new AsusG751());
         System.out.println(asus.toString());
         
+      
+        
         Komputer pecet = sklep.wydaj(new PC553());
         System.out.println(pecet.toString());
         
